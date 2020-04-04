@@ -8,6 +8,6 @@
 
 ### How it works
 * A random number generator is used to generate random questions and answers
-* Animation and transition were added using **<transition>** and **<transition-group>** wrapper
+* Animation and transition were added using __transition__ and __transition-group__ wrapper
 ** Dynamic components were used to create the animation
 
