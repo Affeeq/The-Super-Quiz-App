@@ -25,8 +25,7 @@
   export default {
     data() {
       return {
-        selectedComponent: 'app-question',
-        animateComponent: 'flipOutY'
+        selectedComponent: 'app-question'
       }
     },
     components: {
@@ -38,38 +37,38 @@
 
 <style>
   .flip-enter {
-    opacity: 0;
+    /*opacity: 0;*/
   }
 
   .flip-enter-active {
-    animation: flip-left .7s ease-in;
+    animation: flip-left .5s ease-out forwards;
   }
 
   .flip-leave {
-    opacity: 1;
+    /*opacity: 1;*/
   }
 
   .flip-leave-active {
-    animation: flip-right .7s ease-out;
+    animation: flip-right .5s ease-out forwards;
   }
 
   @keyframes flip-right {
     from {
-      transform: rotateY(0);
+      transform: rotateY(0deg);
     }
     to {
-      transform-style: preserve-3d;
+      /*transform-style: preserve-3d;*/
       transform: rotateY(90deg);
     }
   }
 
   @keyframes flip-left {
     from {
-      transform-style: preserve-3d;
+      /*transform-style: preserve-3d;*/
       transform: rotateY(-90deg);
     }
     to {
-      transform: rotateY(0);
+      transform: rotateY(0deg);
     }
   }
 </style>
